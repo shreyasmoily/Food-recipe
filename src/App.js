@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Nav>
-          <GiKnifeFork />
-          <Logo to={"/"}>Deliciousss</Logo>
+          <GiKnifeFork style={{"fontSize":"5rem", "marginTop":"0.7rem"}} />
+          <Logo to={"/"}>Delicious</Logo>
         </Nav>
         <Search />
         <Category />
@@ -24,15 +24,17 @@ function App() {
 
 const Logo = styled(Link)`
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 4.5rem;
   font-weight: 400;
   font-family: "Lobster Two", cursive;
+  margin-left:0.4rem;
 `;
 const Nav = styled.div`
   padding: 4rem;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  display:flex;
+  justify-content:center;
   svg {
     font-size: 2rem;
   }

@@ -30,16 +30,14 @@ function Recipe() {
         <img src={details.image} alt="" />
       </div>
       <Info>
-        {/* <h1>True or false: {activeTab.length>0} :end</h1> */}
         <Button
-          //  style={activeTab.length>0 ? {active} : {active}}
-          classname={activeTab === "instructions" ? "active" : "active"}
+          className={activeTab === "instructions" ? "active" : ""}
           onClick={() => setActiveTab("instructions")}
         >
           Instructions
         </Button>
         <Button
-          classname={activeTab === "ingredients" ? "active" : ""}
+          className={activeTab === "ingredients" ? "active" : ""}
           onClick={() => setActiveTab("ingredients")}
         >
           Ingredients
@@ -62,9 +60,6 @@ function Recipe() {
     </DetailWrapper>
   );
 }
-
-const active = {    "background": "linear-gradient(35deg, #494949, #313131)",
-  "color": "white"};
 
 const DetailWrapper = styled.div`
   margin-top: 10rem;

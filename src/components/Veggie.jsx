@@ -46,8 +46,8 @@ function Veggie() {
               <SplideSlide key={recipe.id}>
                 <Card>
                   <Link to={"/recipe/" + recipe.id}>
-                    <p>{recipe.title}</p>
                     <img src={recipe.image} alt={recipe.title} />
+                    <p>{recipe.title}</p>
                     <Gradient />
                   </Link>
                 </Card>
@@ -79,7 +79,7 @@ const Card = styled.div`
   p {
     position: absolute;
     z-index: 10;
-    bottom: 0%;
+    bottom: -7%;
     transform: translated(-50% 0%);
     color: white;
     width: 100%;
